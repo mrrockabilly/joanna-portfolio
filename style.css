@@ -70,7 +70,9 @@ width:400px !important;
     margin: 0 auto; 
 }
 
-
+#projects{
+    padding-top: 120px; 
+}
 /*.info{
     margin: 10px;
     width: 300px;
