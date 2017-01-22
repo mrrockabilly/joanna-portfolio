@@ -60,7 +60,7 @@ width:400px !important;
 }
 
 
-
+@media (min-width: 1100px) {
 .projects-container{
     width: 1080px;
     min-height: 120px;
@@ -69,14 +69,21 @@ width:400px !important;
     display: flex;
     margin: 0 auto; 
 }
+}
+@media (max-width: 1099px) {
+.projects-container{
+    width: 580px;
+    min-height: 120px;
+    max-height: auto;
+    padding: 3px;
+    margin: 0 auto; 
+}
+}
 
 #projects{
     padding-top: 120px; 
 }
-/*.info{
-    margin: 10px;
-    width: 300px;
-}*/
+
 
 .proj-card{
     width: 500px;
