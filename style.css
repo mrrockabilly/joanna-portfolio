@@ -1,0 +1,106 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body{
+
+    background-color: #fce4ec;
+}
+h4, h3, p{
+    text-align: center;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin:20px; 
+    padding:5px;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: right}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li.left {float: left}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #f8bbd0}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+.my-header{
+    display: inline-block;
+}
+.logo{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.carousel .carousel-item {
+width:400px !important;
+}
+
+.project-img{
+    width:500px;
+    background-color: red;
+}
+
+
+
+.projects-container{
+    width: 1080px;
+    min-height: 120px;
+    max-height: auto;
+    padding: 3px;
+    display: flex;
+    margin: 0 auto; 
+}
+
+
+/*.info{
+    margin: 10px;
+    width: 300px;
+}*/
+
+.proj-card{
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.proj-pic{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+.cool-fact{
+    font-style: italic;
+}
+
+.contact {display: table; margin: 0 auto;}
+
+.socialIcons{
+    height: 30px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.contact-sec{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
