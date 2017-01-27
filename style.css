@@ -3,7 +3,7 @@ body{
 
     background-color: #fce4ec;
 }
-h4, h3, p{
+h1, h4, h3, p{
     text-align: center;
 }
 
@@ -117,3 +117,10 @@ width:400px !important;
 .parallax-container {
       height: 650px;
     }
+
+
+
+.proj-img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
