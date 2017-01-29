@@ -1,10 +1,17 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body{
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+@import url('https://fonts.googleapis.com/css?family=League+Script');
 
+body{
+    text-align: center;
     background-color: #fce4ec;
 }
-h1, h4, h3, p{
-    text-align: center;
+p{
+        font-family: 'Josefin Slab', serif;
+        font-weight: 900;
+}
+h1, h4, h3 {
+    font-family: 'League Script', serif;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
