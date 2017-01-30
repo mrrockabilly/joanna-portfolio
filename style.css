@@ -8,7 +8,8 @@ body{
     font-family: 'Josefin Slab', serif;
 }
 p{
-    font-weight: 900;
+    font-weight: 2;
+    font-size: 1.2em;
 }
 h1, h4, h3 {
     font-family: 'League Script', serif;
@@ -92,7 +93,11 @@ width:400px !important;
 }
 
 #projects{
-    padding-top: 120px; 
+    padding-top: 250px; 
+}
+
+#about{
+    padding-top: 250px; 
 }
 
 
