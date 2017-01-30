@@ -5,13 +5,14 @@
 body{
     text-align: center;
     background-color: #fce4ec;
+    font-family: 'Josefin Slab', serif;
 }
 p{
-        font-family: 'Josefin Slab', serif;
-        font-weight: 900;
+    font-weight: 900;
 }
 h1, h4, h3 {
     font-family: 'League Script', serif;
+    font-weight: bold;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -33,10 +34,12 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 25px;
 }
 
-ul.topnav li.left {float: left}
+ul.topnav li.left {
+font-weight: bold;
+}
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {background-color: #f8bbd0}
@@ -51,10 +54,11 @@ ul.topnav li.icon {display: none;}
     display: inline-block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 40px;
+    font-family: 'League Script', serif;
 }
 
 .carousel .carousel-item {
