@@ -6,6 +6,7 @@ body{
     text-align: center;
     background-color: #fce4ec;
     font-family: 'Josefin Slab', serif;
+    color: #2C2C2C;
 }
 p{
     font-weight: 2;
@@ -30,7 +31,7 @@ ul.topnav li {float: right}
 /* Style the links inside the list items */
 ul.topnav li a {
     display: inline-block;
-    color: black;
+    color: #2C2C2C;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -53,7 +54,7 @@ ul.topnav li.icon {display: none;}
 }
 .logo{
     display: inline-block;
-    color: black;
+    color: #2C2C2C;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
