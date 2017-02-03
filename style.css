@@ -94,11 +94,12 @@ width:400px !important;
 }
 
 #projects{
-    padding-top: 250px; 
+    padding-top: 50px; 
 }
 
 #about{
-    padding-top: 250px; 
+    padding-top: 250px;  
+    padding-bottom: 250px; 
 }
 
 
