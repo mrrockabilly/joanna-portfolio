@@ -148,3 +148,19 @@ width:400px !important;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+
+
+.mentor:hover {
+    background-color: #f8bbd0;
+    cursor: pointer;
+    }
+    
+.mentor{
+    display: inline-block;
+    color: #2C2C2C;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
