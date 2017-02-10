@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 @import url('https://fonts.googleapis.com/css?family=League+Script');
 
+
+#top .avia-content-slider, #top .avia-content-slider-inner, #top .avia-content-slider-inner .slide-entry-wrap { 
+    -webkit-perspective: none !important; 
+    }
+
+
 body{
     text-align: center;
     background-color: #fce4ec;
