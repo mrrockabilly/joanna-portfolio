@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Joanna Ruby</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="diamond.png" />
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<style>
@@ -23,7 +24,6 @@
 			height: auto;
 			z-index: -100;
 			transform: translateX(-50%) translateY(-50%);
-			background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
 			background-size: cover;
 			transition: 1s opacity;
 		}
@@ -57,6 +57,17 @@
 			div {
 				width: 70%;
 			}
+			h1 {
+				font-size: 3rem;
+				font-family: 'Josefin Slab', serif;
+			}
+			p{
+    			font-weight: 2;
+   				font-size: 1rem;
+			}
+			#polina {
+			transform: translate(-50%, 50%);
+			}
 		}
 		p{
     		font-weight: 2;
@@ -87,7 +98,7 @@
 	</video>
 	<div id="polina">
 		<h1><a href="home.html">Joanna Ruby<a></h1>
-		<p>fashion designer, artist, cat enthusiast</p>
+		<p><a href="home.html">fashion designer, artist, cat enthusiast<a></p>
 	</div>
 	<script>
      var vid = document.getElementById("bgvid");
