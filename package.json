@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mrrockabilly/joanna-portfolio/issues"
   },
-  "homepage": "https://github.com/mrrockabilly/joanna-portfolio#readme"
+  "homepage": "https://github.com/mrrockabilly/joanna-portfolio#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
