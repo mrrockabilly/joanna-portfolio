@@ -1,0 +1,24 @@
+{
+  "name": "joanna-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio for Joanna Ruby fashion designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrrockabilly/joanna-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "art",
+    "fashion"
+  ],
+  "author": "Jason Rubalcaba aka MrRockabilly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrrockabilly/joanna-portfolio/issues"
+  },
+  "homepage": "https://github.com/mrrockabilly/joanna-portfolio#readme"
+}
