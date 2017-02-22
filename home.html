@@ -118,7 +118,7 @@
 	<div class="float-left-area">
 		<div class="inner-left">
 			<ul>
-				<li><a class='dropdown-button' href='#' data-activates='dropdown1'>portfolio</a></li>
+				<li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'>portfolio</a></li>
 				<li id="lucky">lucky brand</li>
 				<li id="blackbook">joes black book</li>
 				<li id="illustations">illustrations</li>
@@ -187,26 +187,26 @@
 
 		$("#lucky").click(function () {
 			$("#photos").html(buildImages(lucky));
-			$("#description").html("A project for Luck brand mentorship.!!!! Inspited by Maine Coon Cats!!!")
+			$("#description").html("Metallic striped dress with colors inspired by Indian spice markets, and a vintage Ethiopian Mud Cloth repurposed as a fringe belt.")
 			makeImagesClickable()
 			$(".selector").fancybox();
 		});
 
 		$("#blackbook").click(function () {
 			$("#photos").html(buildImages(joes));
-			$("#description").html("A project for JOES BLACK BOOK!!!!!!! Inspited by Maine Coon Cats!!!")
+			$("#description").html("Joe's Black Book")
 			makeImagesClickable()
 		});
 
 		$("#illustations").click(function () {
 			$("#photos").html(buildImages(illustations));
-			$("#description").html("A project for STUFFF!!!! Inspited by Maine Coon Cats!!!")
+			$("#description").html("")
 			makeImagesClickable()
 		});
 
 		$("#arc").click(function () {
 			$("#photos").html(buildImages(arc));
-			$("#description").html("A project for ARCCCCCCCC Inspited by Maine Coon Cats!!!")
+			$("#description").html("A collection for the American River College Fashion show.")
 			makeImagesClickable()
 		});
 
