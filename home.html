@@ -94,10 +94,12 @@
 			height: auto !important;
 			padding: 3px;
 		}
-		#description{
+		
+		#description {
 			padding: 20px;
 		}
-		.bold{
+		
+		.bold {
 			font-size: 1.2em;
 			font-weight: 900;
 		}
@@ -116,12 +118,7 @@
 	<div class="float-left-area">
 		<div class="inner-left">
 			<ul>
-				<li><span class="bold">portfolio</span></li>
-				<!--<li>spring</li>
-				<li>summer</li>
-				<li>fall</li>
-				<li>winter</li>-->
-				<li><span class="bold">projects</span></li>
+				<li><a class='dropdown-button' href='#' data-activates='dropdown1'>portfolio</a></li>
 				<li id="lucky">lucky brand</li>
 				<li id="blackbook">joes black book</li>
 				<li id="illustations">illustrations</li>
@@ -142,7 +139,12 @@
 	<div id="modal1" class="modal">
 		<div class="modal-content">
 			<h4>Hi, I'm Joanna!</h4>
-			<p>Hi there!! My name is Joanna Ruby and I transfered to OTIS in my Sophomore year to pursue a bachelors degree after graduating with my Associate of Arts in both Fashion Design and Fashion Merchandising dregrees. I have designed collections for my community college's Senior Capstone show as well as Sacramento Fashion Week and local runway presentations. I worked at a clothing store merchandising thier jewelry cases and mannequins and have sold my own line of accessories on Etsy for the past 3 years. At OTIS I am hoping to gain even more expereince and industry connections so I will have a better time finding a job in the field.</p>
+			<p>Hi there!! My name is Joanna Ruby and I transfered to OTIS in my Sophomore year to pursue a bachelors degree after graduating
+				with my Associate of Arts in both Fashion Design and Fashion Merchandising dregrees. I have designed collections for
+				my community college's Senior Capstone show as well as Sacramento Fashion Week and local runway presentations. I worked
+				at a clothing store merchandising thier jewelry cases and mannequins and have sold my own line of accessories on Etsy
+				for the past 3 years. At OTIS I am hoping to gain even more expereince and industry connections so I will have a better
+				time finding a job in the field.</p>
 		</div>
 		<div class="modal-footer">
 			<a target="_blank" href="https://www.instagram.com/nivelliot/" alt="Instagram Icon"><img class="socialIcons" src="https://d30y9cdsu7xlg0.cloudfront.net/png/38846-200.png" /></a>
@@ -150,61 +152,69 @@
 			<a target="_blank" href="https://www.linkedin.com/in/joanna-ruby-428b32132" alt="linked in logo"><img class="socialIcons" src="https://image.flaticon.com/icons/png/512/34/34227.png" /></a>
 		</div>
 	</div>
+
+	<!-- Dropdown Structure -->
+	<ul id='dropdown1' class='dropdown-content'>
+		<li><a href="#!">Spring</a></li>
+		<li><a href="#!">Summer</a></li>
+		<li><a href="#!">Fall</a></li>
+		<li><a href="#!">Winter</a></li>
+	</ul>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 	<script>
-	var lucky = ["pink-neck.jpg", "red.jpg", "paintchip.jpg", "headwire.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
-	var joes = [ "headwire.jpg", "pink-neck.jpg", "red.jpg", "paintchip.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
-	var illustations = ["20140301220741_00002.jpg","20140301220741_00001.jpg","DSC03291.JPG","il1.jpg","20140301220741_00003.jpg",
-						"ill10.jpg","20140301220741_00004.jpg","ill2.jpg","26337313433_b5081e9a4a_o.jpg","ill3.jpg",
-						"26873866121_afc18d0d07_o.jpg","ill4.jpg","26873866431_519bddbd02_o.jpg","ill5.jpg","26873866981_df0d4132a4_o.jpg",
-						"ill7.jpg","ill8.jpg","illustartion.jpg","untitled-2_24895676386_o.jpg","ill6.jpg","DSC03173.JPG","DSC03211.JPG","DSC03214.JPG","DSC03234.JPG"]
-	var arc = ["11987_203649499780686_1003060896_n.jpg", "155645_541907372527854_337510326_n.jpg", "22018_10152473162040323_93647157_n   copy.jpg",
-				"297689_4449736201540_1524684152_n   copy.jpg", "405124_407809252582773_1380357084_n.jpg", "485327_461502747238530_439757536_n   copy.jpg","527711_387279284657331_252156840_n.jpg",
-				"418378_4449707480822_73281544_n   copy.jpg","427x640xCIC2.jpg.pagespeed.ic.Tgn3auxNJW copy.jpg","483525_492365477477094_1351233159_n.jpg","529159_492365550810420_117871174_n.jpg","529482_461504257238379_919859684_n.jpg",
-				"535119_387281384657121_471562188_n.jpg","538313_387280681323858_1555174483_n.jpg","539671_203649473114022_1926367733_n    copy.jpg","540428_387281197990473_624023020_n.jpg","579458_10151592149220323_380387074_n.jpg",
-				"8458990873_40577d6623_b copy.jpg","8460090638_77a30e2277_b copy.jpg","8460091722_743814d4d0_b copy.jpg"]
+		var lucky = ["pink-neck.jpg", "red.jpg", "paintchip.jpg", "headwire.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
+		var joes = ["headwire.jpg", "pink-neck.jpg", "red.jpg", "paintchip.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
+		var illustations = ["20140301220741_00002.jpg", "20140301220741_00001.jpg", "DSC03291.JPG", "il1.jpg", "20140301220741_00003.jpg",
+			"ill10.jpg", "20140301220741_00004.jpg", "ill2.jpg", "26337313433_b5081e9a4a_o.jpg", "ill3.jpg",
+			"26873866121_afc18d0d07_o.jpg", "ill4.jpg", "26873866431_519bddbd02_o.jpg", "ill5.jpg", "26873866981_df0d4132a4_o.jpg",
+			"ill7.jpg", "ill8.jpg", "illustartion.jpg", "untitled-2_24895676386_o.jpg", "ill6.jpg", "DSC03173.JPG", "DSC03211.JPG", "DSC03214.JPG", "DSC03234.JPG"]
+		var arc = ["11987_203649499780686_1003060896_n.jpg", "155645_541907372527854_337510326_n.jpg", "22018_10152473162040323_93647157_n   copy.jpg",
+			"297689_4449736201540_1524684152_n   copy.jpg", "405124_407809252582773_1380357084_n.jpg", "485327_461502747238530_439757536_n   copy.jpg", "527711_387279284657331_252156840_n.jpg",
+			"418378_4449707480822_73281544_n   copy.jpg", "427x640xCIC2.jpg.pagespeed.ic.Tgn3auxNJW copy.jpg", "483525_492365477477094_1351233159_n.jpg", "529159_492365550810420_117871174_n.jpg", "529482_461504257238379_919859684_n.jpg",
+			"535119_387281384657121_471562188_n.jpg", "538313_387280681323858_1555174483_n.jpg", "539671_203649473114022_1926367733_n    copy.jpg", "540428_387281197990473_624023020_n.jpg", "579458_10151592149220323_380387074_n.jpg",
+			"8458990873_40577d6623_b copy.jpg", "8460090638_77a30e2277_b copy.jpg", "8460091722_743814d4d0_b copy.jpg"]
 
-	function buildImages(imageArray){
-		var imgTags = "";
-		for(var i = 0; i < imageArray.length; i++){
-			imgTags = imgTags + `<img class="clickable" src="images/${imageArray[i]}">`
+		function buildImages(imageArray) {
+			var imgTags = "";
+			for (var i = 0; i < imageArray.length; i++) {
+				imgTags = imgTags + `<img class="clickable" src="images/${imageArray[i]}">`
+			}
+			return imgTags
 		}
-		return imgTags
-	}
 
-		$( "#lucky" ).click(function() {
-			$( "#photos" ).html(buildImages(lucky));
+		$("#lucky").click(function () {
+			$("#photos").html(buildImages(lucky));
 			$("#description").html("A project for Luck brand mentorship.!!!! Inspited by Maine Coon Cats!!!")
 			makeImagesClickable()
 			$(".selector").fancybox();
 		});
 
-		$( "#blackbook" ).click(function() {
-			$( "#photos" ).html(buildImages(joes));
+		$("#blackbook").click(function () {
+			$("#photos").html(buildImages(joes));
 			$("#description").html("A project for JOES BLACK BOOK!!!!!!! Inspited by Maine Coon Cats!!!")
 			makeImagesClickable()
 		});
 
-		$( "#illustations" ).click(function() {
-			$( "#photos" ).html(buildImages(illustations));
+		$("#illustations").click(function () {
+			$("#photos").html(buildImages(illustations));
 			$("#description").html("A project for STUFFF!!!! Inspited by Maine Coon Cats!!!")
 			makeImagesClickable()
 		});
 
-		$( "#arc" ).click(function() {
-			$( "#photos" ).html(buildImages(arc));
+		$("#arc").click(function () {
+			$("#photos").html(buildImages(arc));
 			$("#description").html("A project for ARCCCCCCCC Inspited by Maine Coon Cats!!!")
 			makeImagesClickable()
 		});
 
 
-		function makeImagesClickable(){
+		function makeImagesClickable() {
 			var addToAll = true;
 			var gallery = true;
 			var titlePosition = 'inside';
-			$(addToAll ? '.clickable' : 'img.fancybox').each(function(){
+			$(addToAll ? '.clickable' : 'img.fancybox').each(function () {
 				var $this = $(this);
 				var title = $this.attr('title');
 				var src = $this.attr('data-big') || $this.attr('src');
@@ -217,13 +227,12 @@
 				titlePosition: titlePosition
 			});
 		}
-	 $(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-  });
-        
+		$(document).ready(function () {
+			// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+			$('.modal').modal();
+		});
 
-</script>
+	</script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
 </body>
