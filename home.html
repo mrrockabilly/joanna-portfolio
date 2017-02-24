@@ -111,16 +111,17 @@
 
 	<ul class="topnav" id="myTopnav">
 		<li class="left"><a target="_blank" href="home.html"><span class="logo">joanna ruby</span></a></li>
-		<li><a href="https://www.etsy.com/shop/NivElliot">shop</a></li>
-		<li><a href="http://nivelliot.com">blog</a></li>
-		<li><a href="#modal1">about</a></li>
+		<li><a target="_blank" href="https://www.etsy.com/shop/NivElliot">shop</a></li>
+		<li><a target="_blank" href="http://nivelliot.com">blog</a></li>
+		<li><a target="_blank" href="#modal1">about</a></li>
 	</ul>
 	<div class="float-left-area">
 		<div class="inner-left">
 			<ul>
-				<li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'>portfolio</a></li>
+				<!--<li><a class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown1'>portfolio</a></li>-->
+				<li id="sac">sacfw</li>
 				<li id="lucky">lucky brand</li>
-				<li id="blackbook">joes black book</li>
+				<!--<li id="blackbook">joes black book</li>-->
 				<li id="illustations">illustrations</li>
 				<li id="arc">arc fashion</li>
 			</ul>
@@ -165,7 +166,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 	<script>
-		var lucky = ["pink-neck.jpg", "red.jpg", "paintchip.jpg", "headwire.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
+		var lucky = ["Lucky5.jpg","13139080_10201578579942705_5166417993025550068_n.jpg","Lucky11.jpg",
+					"Lucky6.jpg","13221714_10201578579622697_7396498972605307758_n.jpg","ill10.jpg","ill2.jpg","13102780_10201578579662698_1488351635563127018_n.jpg","ill3.jpg","ill4.jpg","ill5.jpg","ill6.jpg","ill8.jpg"]
 		var joes = ["headwire.jpg", "pink-neck.jpg", "red.jpg", "paintchip.jpg", "plastic.jpg", "pink-neck.jpg", "clear-purse.jpg", "crown.jpg", "silver-flower.png"]
 		var illustations = ["20140301220741_00002.jpg", "20140301220741_00001.jpg", "DSC03291.JPG", "il1.jpg", "20140301220741_00003.jpg",
 			"ill10.jpg", "20140301220741_00004.jpg", "ill2.jpg", "26337313433_b5081e9a4a_o.jpg", "ill3.jpg",
@@ -176,6 +178,12 @@
 			"418378_4449707480822_73281544_n   copy.jpg", "427x640xCIC2.jpg.pagespeed.ic.Tgn3auxNJW copy.jpg", "483525_492365477477094_1351233159_n.jpg", "529159_492365550810420_117871174_n.jpg", "529482_461504257238379_919859684_n.jpg",
 			"535119_387281384657121_471562188_n.jpg", "538313_387280681323858_1555174483_n.jpg", "539671_203649473114022_1926367733_n    copy.jpg", "540428_387281197990473_624023020_n.jpg", "579458_10151592149220323_380387074_n.jpg",
 			"8458990873_40577d6623_b copy.jpg", "8460090638_77a30e2277_b copy.jpg", "8460091722_743814d4d0_b copy.jpg"]
+		var sac = ["522540_439505942793745_1334881858_n.jpg","1013686_10151659495014438_101880179_n.jpg","11218_368652176582177_856564923_n   copy.jpg","1231131_547724845298175_1072886371_n.jpg","1235227_553193624751297_399739372_n.jpg","1236208_547478595322800_469321963_n   copy.jpg",
+					"1236898_546609575409702_1386907575_n-1 copy.jpg","1238001_606269932758264_1824473199_n.jpg","1239024_553193694751290_346747978_n.jpg","254421_528206847231240_1416776827_n.jpg","295684_370642696383125_1339835052_n.jpg",
+					"374521_668606273165581_1685729064_n.jpg","426397_439505849460421_784061781_n.jpg","482439_439505789460427_2037786524_n.jpg","482839_439506062793733_487266969_n   copy.jpg","484925_668607689832106_2109239488_n.jpg",
+					"601412_526119774106614_1564320223_n.jpg","601633_526119944106597_1282792126_n.jpg","935927_10151659495399438_1519652224_n.jpg",
+					"9727284892_0d36c61555_b copy.jpg"]
+				
 
 		function buildImages(imageArray) {
 			var imgTags = "";
@@ -207,6 +215,12 @@
 		$("#arc").click(function () {
 			$("#photos").html(buildImages(arc));
 			$("#description").html("A collection for the American River College Fashion show.")
+			makeImagesClickable()
+		});
+
+		$("#sac").click(function () {
+			$("#photos").html(buildImages(sac));
+			$("#description").html("A collection for Sacramento Fashion Week.")
 			makeImagesClickable()
 		});
 
