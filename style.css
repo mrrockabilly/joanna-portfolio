@@ -176,7 +176,16 @@ width:400px !important;
     background-color: #fce4ec;
     color: black;
     text-decoration: none;
+}
 
+.dropdown-content:hover {   
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content li:hover {
+    background-color: #f8bbd0;
+    border-color:  #f8bbd0;
 }
 .dropdown-content li>a, .dropdown-content li>span {
     font-size: 20px;

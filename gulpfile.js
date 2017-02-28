@@ -30,7 +30,7 @@ gulp.task('resize', function () {
       width : 1500,
       upscale : false
     }))
-    .pipe(gulp.dest('dist/cropped'));
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('default', function () {
