@@ -133,8 +133,8 @@
 	</div>
 
 	<div class="float-right-area">
+		<img id="opening" src="images/ill7.jpg" width="100%">
 		<div class="inner-right" id="photos">
-			<img src="images/fashion.gif">
 		</div>
 	</div>
 
@@ -142,8 +142,8 @@
 	<div id="modal1" class="modal">
 		<div class="modal-content">
 			<h4>Hi, I'm Joanna!</h4>
-			<p>Hi there!! My name is Joanna Ruby and I transfered to OTIS in my Sophomore year to pursue a bachelors degree after graduating
-				with my Associate of Arts in both Fashion Design and Fashion Merchandising dregrees. I have designed collections for
+			<img src="https://scontent-lax3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/13381267_107566099671977_428069095_n.jpg" width="190px">
+			<p>Hi there!! I have designed collections for
 				my community college's Senior Capstone show as well as Sacramento Fashion Week and local runway presentations. I worked
 				at a clothing store merchandising thier jewelry cases and mannequins and have sold my own line of accessories on Etsy
 				for the past 3 years. At OTIS I am hoping to gain even more expereince and industry connections so I will have a better
@@ -201,6 +201,7 @@
 		}
 
 		$("#lucky").click(function () {
+			$("#opening").hide();
 			$("#photos").html(buildImages(lucky));
 			$("#description").html("Metallic striped dress with colors inspired by Indian spice markets, and a vintage Ethiopian Mud Cloth repurposed as a fringe belt.")
 			makeImagesClickable()
@@ -208,24 +209,28 @@
 		});
 
 		$("#blackbook").click(function () {
+			$("#opening").hide();
 			$("#photos").html(buildImages(joes));
 			$("#description").html("Joe's Black Book")
 			makeImagesClickable()
 		});
 
 		$("#illustations").click(function () {
+			$("#opening").hide();
 			$("#photos").html(buildImages(illustations));
 			$("#description").html("")
 			makeImagesClickable()
 		});
 
 		$("#arc").click(function () {
+			$("#opening").hide();
 			$("#photos").html(buildImages(arc));
 			$("#description").html("A collection for the American River College Fashion show.")
 			makeImagesClickable()
 		});
 
 		$("#sac").click(function () {
+			$("#opening").hide();
 			$("#photos").html(buildImages(sac));
 			$("#description").html("A collection for Sacramento Fashion Week.")
 			makeImagesClickable()
