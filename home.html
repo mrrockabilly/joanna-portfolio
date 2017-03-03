@@ -30,8 +30,9 @@
 		.inner-left {
 			padding: 5px 5px 5px 5px;
 			margin-right: 0px;
-			<!--border: #999999 1px solid;
-			--> min-height: 60px;
+			margin-left: 30px;
+			min-height: 60px;
+			text-align: left;
 		}
 		
 		.inner-right {
@@ -119,11 +120,9 @@
 		<div class="inner-left">
 			<ul>
 				<li id="portfolio"><a href='#'>portfolio</a></li>
-				<li id="sac">sac fashion week</li>
 				<li class='dropdown-button' data-beloworigin="true" href='#' data-activates='dropdown2'>mentor projects</li>
-				<!--<li id="lucky">lucky brand</li>-->
-				<!--<li id="blackbook">joes black book</li>-->
 				<li id="illustations">illustrations</li>
+				<li id="sac">sac fashion week</li>
 				<li id="arc">atlantic city</li>
 			</ul>
 			<div id="description">
@@ -166,9 +165,11 @@
 
 	<!-- mentor projects dropdown -->
 	<ul id='dropdown2' class='dropdown-content'>
-		<li id="lucky"><a href="#!">lucky</a></li>
-		<li id="albert"><a href="#!">albert</a></li>
-		<li id="nanette"><a href="#!">nanette</a></li>
+		<li id="albert"><a href="#!">albert wolsky</a></li>
+		<li><a href="#!">david meister</a></li>
+		<li id="lucky"><a href="#!">lucky brand</a></li>
+		<li id="nanette"><a href="#!">nanette lepore</a></li>
+		
 	</ul>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -177,18 +178,18 @@
 	<script>
 		var lucky = ["Lucky5.jpg","13139080_10201578579942705_5166417993025550068_n.jpg","Lucky11.jpg",
 					"Lucky6.jpg","13221714_10201578579622697_7396498972605307758_n.jpg","ill10.jpg","ill2.jpg","13102780_10201578579662698_1488351635563127018_n.jpg","ill3.jpg","ill4.jpg","ill5.jpg","ill6.jpg","ill8.jpg"]
-		var portfolio = ["portfolio1.jpg","portfolio2.jpg","portfolio3.jpg","portfolio4.jpg","portfolio5.jpg","portfolio6.jpg","portfolio7.png","portfolio8.png","portfolio9.png"]
-		var illustations = ["20140301220741_00002.jpg","20140301220741_00003.jpg","DSC03214.JPG","	DSC03234.JPG","20140301220741_00004.jpg","DSC03173.JPG","DSC03291.JPG",
-					"ill7.jpg","DSC03211.JPG","illustartion.jpg"]
-		var arc = ["11987_203649499780686_1003060896_n.jpg", "155645_541907372527854_337510326_n.jpg", "22018_10152473162040323_93647157_n   copy.jpg",
+		var portfolio = ["portfolio1.jpg","portfolio2.jpg","portfolio3.jpg","portfolio4.jpg","portfolio5.jpg","portfolio6.jpg","portfolio8.png","portfolio9.png"]
+		var illustations = ["20140301220741_00002.jpg","DSC03214.JPG","	DSC03234.JPG","20140301220741_00004.jpg","DSC03173.JPG","DSC03291.JPG",
+					"ill7.jpg","illustartion.jpg"]
+		var arc = ["11987_203649499780686_1003060896_n.jpg", "155645_541907372527854_337510326_n.jpg",
 			"297689_4449736201540_1524684152_n   copy.jpg", "405124_407809252582773_1380357084_n.jpg", "485327_461502747238530_439757536_n   copy.jpg", "527711_387279284657331_252156840_n.jpg",
 			"418378_4449707480822_73281544_n   copy.jpg", "427x640xCIC2.jpg.pagespeed.ic.Tgn3auxNJW copy.jpg", "483525_492365477477094_1351233159_n.jpg", "529159_492365550810420_117871174_n.jpg", "529482_461504257238379_919859684_n.jpg",
 			"535119_387281384657121_471562188_n.jpg", "538313_387280681323858_1555174483_n.jpg", "539671_203649473114022_1926367733_n    copy.jpg", "540428_387281197990473_624023020_n.jpg", "579458_10151592149220323_380387074_n.jpg",
 			"8458990873_40577d6623_b copy.jpg", "8460090638_77a30e2277_b copy.jpg", "8460091722_743814d4d0_b copy.jpg"]
-		var sac = ["522540_439505942793745_1334881858_n.jpg","1013686_10151659495014438_101880179_n.jpg","11218_368652176582177_856564923_n   copy.jpg","1231131_547724845298175_1072886371_n.jpg","1235227_553193624751297_399739372_n.jpg","1236208_547478595322800_469321963_n   copy.jpg",
-				"1236898_546609575409702_1386907575_n-1 copy.jpg","1239024_553193694751290_346747978_n.jpg","254421_528206847231240_1416776827_n.jpg","295684_370642696383125_1339835052_n.jpg",
+		var sac = ["522540_439505942793745_1334881858_n.jpg","1013686_10151659495014438_101880179_n.jpg","11218_368652176582177_856564923_n   copy.jpg","1231131_547724845298175_1072886371_n.jpg","1236208_547478595322800_469321963_n   copy.jpg",
+				"1236898_546609575409702_1386907575_n-1 copy.jpg","254421_528206847231240_1416776827_n.jpg","295684_370642696383125_1339835052_n.jpg",
 					"374521_668606273165581_1685729064_n.jpg","426397_439505849460421_784061781_n.jpg","482439_439505789460427_2037786524_n.jpg","482839_439506062793733_487266969_n   copy.jpg","484925_668607689832106_2109239488_n.jpg",
-					"601412_526119774106614_1564320223_n.jpg","1238001_606269932758264_1824473199_n.jpg","601633_526119944106597_1282792126_n.jpg","935927_10151659495399438_1519652224_n.jpg",
+					"601412_526119774106614_1564320223_n.jpg","1238001_606269932758264_1824473199_n.jpg","601633_526119944106597_1282792126_n.jpg","935927_10151659495399438_1519652224_n.jpg","1235227_553193624751297_399739372_n.jpg",
 					"9727284892_0d36c61555_b copy.jpg"]
 		var nanette = ["nanette7.png","nanette2.jpg","nanette4.png","nanette5.png","nanette6.png","nanette1.jpg","nanette8.jpg"]
 		var albert = ["albert1.jpg","albert2.jpg","albert3.jpg","albert4.jpg","albert5.jpg","albert6.jpg","albert7.jpg","albert8.png","albert9.png",]
