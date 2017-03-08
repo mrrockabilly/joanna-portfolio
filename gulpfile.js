@@ -14,6 +14,10 @@ gulp.task('minify', function () {
 
 gulp.task('compr-img', () =>
   gulp.src('images/*')
+    .pipe(imageResize({
+      width: 1500,
+      upscale: false
+    }))
     .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
 );
@@ -22,15 +26,6 @@ gulp.task('minify-css', function () {
   return gulp.src('*.css')
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(gulp.dest('dist'));
-});
-
-gulp.task('resize', function () {
-  gulp.src('images/*')
-    .pipe(imageResize({
-      width : 1500,
-      upscale : false
-    }))
-    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('default', function () {
