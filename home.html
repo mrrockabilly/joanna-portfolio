@@ -166,7 +166,7 @@
 	<!-- mentor projects dropdown -->
 	<ul id='dropdown2' class='dropdown-content'>
 		<li id="albert"><a href="#!">albert wolsky</a></li>
-		<li><a href="#!">david meister</a></li>
+		<li id="david"><a href="#!">david meister</a></li>
 		<li id="lucky"><a href="#!">lucky brand</a></li>
 		<li id="nanette"><a href="#!">nanette lepore</a></li>
 		
@@ -192,7 +192,8 @@
 					"601412_526119774106614_1564320223_n.jpg","1238001_606269932758264_1824473199_n.jpg","601633_526119944106597_1282792126_n.jpg","935927_10151659495399438_1519652224_n.jpg","1235227_553193624751297_399739372_n.jpg",
 					"9727284892_0d36c61555_b copy.jpg"]
 		var nanette = ["nanette7.png","nanette4.png","nanette5.png","nanette6.png","nanette1.jpg","nanette8.jpg"]
-		var albert = ["albert1.jpg","albert2.jpg","albert3.jpg","albert4.jpg","albert5.jpg","albert6.jpg","albert7.jpg","albert8.png","albert9.png",]
+		var albert = ["albert1.jpg","albert2.jpg","albert3.jpg","albert4.jpg","albert5.jpg","albert6.jpg","albert7.jpg","albert8.png","albert9.png"]
+		var david = ["david1.jpg","david2.jpg","david3.jpg","david4.jpg","david5.jpg","david6.jpg","david7.jpg"]
 				
 
 		function buildImages(imageArray) {
@@ -257,6 +258,12 @@
 			$("#opening").hide();
 			$("#photos").html(buildImages(portfolio));
 			$("#description").html("These are some projects that I've worked on for my portfolio.")
+			makeImagesClickable()
+		});
+		$("#david").click(function () {
+			$("#opening").hide();
+			$("#photos").html(buildImages(david));
+			$("#description").html("")
 			makeImagesClickable()
 		});
 
