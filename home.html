@@ -201,6 +201,7 @@
 			for (var i = 0; i < imageArray.length; i++) {
 				imgTags = imgTags + `<img class="clickable" src="images/${imageArray[i]}">`
 			}
+	
 			return imgTags
 		}
 
@@ -249,7 +250,7 @@
 
 		$("#albert").click(function () {
 			$("#opening").hide();
-			$("#photos").html(buildImages(albert));
+			$("#photos").html('<h1>HELLOOOOO</h1>');
 			$("#description").html("I worked with Abert Wolsky as part of Otis's mentorship program.")
 			makeImagesClickable()
 		});
