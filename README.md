@@ -3,7 +3,9 @@
 ## About
 
 This web page is deployed on an AWS S3 bucket. It's an attempt at making a single page app with out using a frame work and using jQuery for
-for all DOM minipulation. I also utilized the Materialize CSS library.
+for all DOM minipulation.
+
+View this page at www.joannaruby.com
 
 ## Installation
 
@@ -13,3 +15,7 @@ cd joanna-portfolio
 npm install
 gulp
 ```
+
+## Technology Used
+
+AWS S3, jQuery, Materialize CSS
