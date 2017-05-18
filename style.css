@@ -10,7 +10,7 @@
 
 body{
     text-align: center;
-    background-color: #fce4ec;
+    background-color: #f6f6f6;
     font-family: 'Josefin Slab', serif;
     color: #2C2C2C;
 }
@@ -50,7 +50,7 @@ font-weight: bold;
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #f8bbd0}
+ul.topnav li a:hover {background-color: #e4e4e4}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -159,7 +159,7 @@ width:400px !important;
 
 
 .mentor:hover {
-    background-color: #f8bbd0;
+    background-color: #e4e4e4;
     cursor: pointer;
     }
     
@@ -173,7 +173,7 @@ width:400px !important;
 }
 
 .dropdown-content {
-    background-color: #fce4ec;
+    background-color: #f6f6f6;
     color: black;
     text-decoration: none;
 }
@@ -184,8 +184,8 @@ width:400px !important;
 }
 
 .dropdown-content li:hover {
-    background-color: #f8bbd0;
-    border-color:  #f8bbd0;
+    background-color: #e4e4e4;
+    border-color:  #e4e4e4;
 }
 .dropdown-content li>a, .dropdown-content li>span {
     font-size: 20px;
@@ -196,10 +196,10 @@ width:400px !important;
 }
 
 .modal .modal-footer{
-    background-color: #fce4ec;;
+    background-color: #f6f6f6;
  
 }
 .modal{
-    background-color: #fce4ec;
+    background-color: #f6f6f6;
     height: 5000px;
 }
